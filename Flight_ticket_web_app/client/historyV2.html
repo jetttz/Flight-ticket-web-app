@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>History</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body onload="displayHistoryV2() ">
+<table class="table mt-5 text-center " >
+  <thead class="bg-primary">
+    <tr>
+      <th>ticket no</th>
+      <th>flight id</th>
+      <th>seat no</th>
+      <th>scheduled departure</th>
+      <th>scheduled arrival</th>
+      <th>Refund</th>
+    </tr>
+  </thead>
+  <tbody id="historyV2">
+  </tbody>
+</table>
+
+<button type="button"  onclick="location.href='trips.html'" class="btn btn-info btn-lg btn-block"  value="Find_flights" id="return to trips">LookUp more tickets history</button>
+
+<h4 style="text-align: center;">Important: Seat number wont be reserve until passenger check in</h4>
+<script src="main.js"></script>
+</body>
+
+</html>

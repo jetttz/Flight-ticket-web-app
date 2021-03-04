@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+<title>Info</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body onload="formPeople()">
+
+  
+<div id="inputs" class="container mt-3 col-md-12">  
+</div> 
+
+<div class="container mt-3 col-md-12">
+  <h2 class = "bg-info">Email and Phone number* </h2>
+  <div class="input-group">
+  <input type="email" id="email" name="email" placeholder= "example@gmail.com" class="form-control">
+  <input  type="number" id="number" min="0" step="1" placeholder= "##########" class="form-control"  name="phone">
+</div>
+</div>
+
+<div class="container mt-3 col-md-12">
+  <h2 class = "bg-info">Discount </h2>
+  <div class="input-group">
+
+  <input id="validation"type="text" placeholder= "Discount code" class="form-control"  name="Discount">
+  <button id="validationbutton" onclick="formDiscount()" class="btn btn-primary text-center" type="submit">Submit</button>
+</div>
+</div>
+
+
+<!-- hide = d-none  hide show = d-block   -->
+<ul class=" mt-5 list-group d-block ">
+	<h2 class = "bg-info">Total </h2>
+  <li id="fares" class="list-group-item">Fares: $100</li>
+  <li id="taxes" class="list-group-item">Taxes and fees: $20</li>
+  
+  <li id=discount class="list-group-item">Discount: $0</li>
+  <li id=total class="list-group-item">Total: $0</li>
+</ul>
+
+
+<div class="container mt-3 col-md-12">
+  <h2 class = "bg-info">Payment*</h2>
+  <div class="input-group">
+  <input type="number" id="card" name="card" placeholder= "credit card #" class="form-control">
+
+</div>
+</div>
+<div class="text-center">
+<button class="mt-3 btn btn-primary text-center" onclick="disableButton()" type="submit">Submit</button>
+</div>
+
+<script src="main.js"></script>
+</body>
+
+
+</html>

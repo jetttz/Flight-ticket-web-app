@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<title>History</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+</head>
+
+<body onload="displayHistory()">
+<table class="table table-hover " >
+  <thead class="bg-primary">
+    <tr>
+      <th>ticket_no</th>
+      <th >flight_id</th>
+      <th >seat_no</th>
+      <th>gate</th>
+      <th>scheduled_departure</th>
+      <th>scheduled_arrival</th>
+    </tr>
+  </thead>
+  <tbody id="history">
+  </tbody>
+</table>
+<button type="button"  onclick="location.href='trips.html'" class="btn btn-info btn-lg btn-block"  value="Find_flights" id="return to trips">LookUp more tickets history</button>
+
+<script src=main.js></script>
+
+</body>
+
+</html>

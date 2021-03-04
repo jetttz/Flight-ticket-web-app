@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{
+  background-image: url("img/flights.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+</style>
+<title>Current Flight</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet"/>
+</head>
+<body onload="htmlFlightDestination()">
+<form>
+  <div class="form-group" id = "inputfrom">
+    <label >From*</label>
+    <select class="form-control"  id="From">
+    </select>
+  </div>
+
+   <div class="form-group"  id = "inputto">
+    <label >To*</label>
+     <select class="form-control"  id="To">
+    </select>
+  </div>
+  
+
+  <div class="form-group"  id = "inputdate" >
+    <label>Date</label>
+    <select class="form-control" id="Date">
+    </select>
+  </div>
+
+   <div class="form-group"  id = "inputTravelers">
+    <label >Travelers</label>
+    <select class="form-control" id="Travelers">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+    </select>
+  </div>
+
+<button type="button" onclick="select_flight()" class="btn btn-info btn-lg btn-block"  value="Find_flights" id="Find_flights">Find flights</button>
+
+<script src="main.js"></script>
+
+
+</body>
+</html>

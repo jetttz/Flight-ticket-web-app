@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<style>
+body{
+  background-image: url("img/list_flights.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+.fixedbutton {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+
+}
+</style>
+<title>Available Flights</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body onload="displayTable()">
+
+<!--table-hover        -->
+<h2 style="text-align: center;">Direct and Indirect Flights</h2>
+<div style="overflow-x: auto;">
+<table class="table mt-5 text-center " id="todo-list">
+  <thead class="bg-primary">
+    <tr>
+      <th>flight id</th>
+      <th>schedule departure</th>
+      <th>scheduled arrival</th>
+      <th>seats available</th>
+      <th>meal</th>
+      <th>movie</th>
+      <th>stops</th>
+      <th>cost</th>
+      <th>book flight</th>
+    </tr>
+  </thead>
+  <tbody id="input-table">
+    <!--<tr > -->
+  </tbody>
+</table>
+</div>
+<h2 style="text-align: center;">Round Flights</h2>
+<div style="overflow-x: auto;">
+<table class="table mt-5 text-center " id="roundtrip">
+  <thead class="bg-primary">
+    <tr>
+      <th>flight id</th>
+      <th>schedule departure</th>
+      <th>schedule arrival</th>
+      <th>schedule departure (return)</th>
+      <th>schedulre arrival (return) </th>
+      <th>seats available</th>
+      <th>meal</th>
+      <th>movie</th>
+      <th>cost</th>
+      <th>book flight</th>
+    </tr>
+  </thead>
+  <tbody id="roundtrip_input">
+    <!--<tr > -->
+  </tbody>
+</table>
+</div>
+
+<button onclick="window.history.back()" id="fixedbutton">Go back</button>
+
+</body>
+<script src='main.js'></script>
+</html>
+<!--</tr>-->

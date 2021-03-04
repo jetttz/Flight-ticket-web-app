@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<title>Check-In</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+<h2 style="color:steelblue; text-align: center;" >Check in 24 hours before your flight</h2>
+<form action="/action_page.php">
+<div class="container mt-3 cold-md-12">
+    <h5>(*Required)</h5>
+    <h2 class="bg-info">Check In</h2>
+    <div class="input-group">
+        <input id="first" type="text" placeholder="Passenger First Name*" class="form-control" name="First Name" required>
+        <input id="last" type="text" placeholder="Passenger Last Name*" class="form-control" name="Last Name" required>
+    </div>
+    <div class="input-group">
+        <input id="num" type="number" placeholder="Ticket Num*" class="form-control" name="num" required>
+    </div>
+
+    <button type="button" id="info" onclick="checkIN()">Submit</button>
+
+</div>
+</form>
+<script src="main.js"></script>
+</body>    
+</html>
